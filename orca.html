@@ -44,7 +44,7 @@
   delay.delayTime.value = 0.15; // 150ms
 
   const feedback = ctx.createGain();
-  feedback.gain.value = 0.05; // 덜 울리도록 피드백 줄임
+  feedback.gain.value = 0.01; // 덜 울리도록 피드백 줄임
 
   // 연결: delay feedback loop
   delay.connect(feedback);
